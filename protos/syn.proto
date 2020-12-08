@@ -1,0 +1,20 @@
+
+syntax = "proto3";
+
+service SynService {
+    rpc Syn (SynRequest)
+        returns (AckResponse){}
+}
+
+message SynRequest {
+}
+
+enum Status {
+    Ok = 0;
+    Ng = 1;
+}
+
+message AckResponse {
+    Status status = 1;
+    string detail = 2;
+}
