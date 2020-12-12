@@ -21,12 +21,12 @@ Because the following error was occurred.
 ...
 [MAKE]    Building protobuf
 checking whether to enable maintainer-specific portions of Makefiles... yes
-configure: error: cannot find install-sh, install.sh, or shtool in ""."" ""./.."" ""./../..""
+configure: error: cannot find install-sh, install.sh, or shtool in "." "./.." "./../.."
 make: *** [/grpc-cpp-sample/grpc/libs/opt/protobuf/libprotobuf.a] Error 1
 
 ==> Pouring libtool-2.4.6_2.big_sur.bottle.tar.gz
 ==> Caveats
-In order to prevent conflicts with Apple''s own libtool we have prepended a ""g""
+In order to prevent conflicts with Apple's own libtool we have prepended a "g"
 so, you have instead: glibtool and glibtoolize.
 ```
 
@@ -40,9 +40,11 @@ cd ..
 
 Usage
 ---
+```bash
 cd server
 make
 ./server &
 cd ../client
 make
 ./client
+```
