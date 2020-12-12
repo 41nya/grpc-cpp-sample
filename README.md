@@ -41,6 +41,7 @@ cd ..
 Usage
 ---
 ```bash
+export DYLD_LIBRARY_PATH=./grpc/libs/opt
 cd server
 make
 ./server &
